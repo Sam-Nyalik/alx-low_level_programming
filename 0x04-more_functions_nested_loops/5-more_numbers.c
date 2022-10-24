@@ -6,7 +6,7 @@
  *Return: 10x the numbers 0-14
  */
 
-void more_number(void)
+void more_numbers(void)
 {
 	int a, b;
 
