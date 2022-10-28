@@ -16,7 +16,6 @@ char *rot13(char *s)
 	char *ptr = s;
 
 	char *ptr = s;
-	{
 		for (i = 0; i <= 52; i++)
 		{
 			for (i = 0; i <= 52; i++)
