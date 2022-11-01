@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *_strstr - locates a substring
- * 
- *@haystack: the longer string to search
- *@needle: the substring to search for
- *
- *Return: a pointer to the beginning of the located substring, or NULL if
- *the substring is not found.
- */
+* _strstr - locates a substring
+*
+* @haystack: the longer string to search
+* @needle: the substring to search for
+*
+* Return: a pointer to the beginning of the located substring, or NULL if
+* the substring is not found.
+*/
 
 char *_strstr(char *haystack, char *needle)
 {
@@ -18,19 +18,17 @@ char *_strstr(char *haystack, char *needle)
 	while (needle[s] != '\0')
 		s++;
 
-	while(*haystack)
+	while (*haystack)
 	{
-		for(i = 0; needle[i]; i++)
+		for (i = 0; needle[i]; i++)
 		{
-			if(haystack[i] != needle[i])
+			if (haystack[i] != needle[i])
 				break;
 		}
-		if(i != s)
+		if (i != s)
 			haystack++;
-
 		else
 			return (haystack);
 	}
-
 	return (NULL);
 }
